@@ -1,1 +1,1 @@
-web: gunicorn WebDev.WebDev.wsgi --log-file -
+web: gunicorn --chdir WebDev WebDev.wsgi:application --log-file -
