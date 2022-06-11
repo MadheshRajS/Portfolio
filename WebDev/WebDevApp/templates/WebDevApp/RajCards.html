@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Madhesh Portfolio</title>
+</head>
+<style>
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    padding-top: 10vh;
+    width: 70%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
+</style>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+           <i class="fas fa-smile fa-5x white"></i>
+			<!-- <!DOCTYPE html>
+			<html>
+			<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			.avatar {
+			vertical-align: middle;
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			}
+			</style>
+			</head>
+			<body>
+
+			<h2></h2>
+
+			<img src="C:\Users\ASUS\Desktop\JS\IMG_9846 (1).jpg" alt="Avatar" class="avatar">
+			</body>
+			</html> -->
+
+            <h2>Madhesh Raj S</h2>
+            <p>Virudhunagar,TamilNadu.</p>
+            <a href="https://twitter.com/Madheshraj_1"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/madhesh-raj-s-061945217"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MadheshRajS"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>I'm a goal oriented,determined and ambitious person with a passion for data engineering role.Football is my other passion.I'm working in the Tata Consultancy services as an assistant system engineering. I graduated as a Computer Science Engineering student from Mepco Schlenk Engineering College in May 2022, and I am happy to be a part of this exciting industry and embrace new learnings along the way!</p>
+            <h2>Experience</h2>
+            <p>Currently working at TCS with less than a year of experience.</p>
+
+            <h2>Skills</h2>
+            <p>
+			1.Python<br>
+			2.Sql<br>
+			3.MongoDB
+			</p>
+            <h2>Projects</h2>
+			<details>
+				<summary >MRI RECONSTRUCTION</summary>
+					<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp MR Image reconstruction using deep learning has proved in reducing the MRI acquisition time and reducing the computational complexity compared to the other analytical method. The challenges in this method is using large training dataset in larger neural networks. In recent methods, short connections between layers outperforms deeper neural networks. In this work, such short connections called as Densely Connected Residual Blocks (DCR) is used. DCR blocks concatenates the various feature maps that are extracted form the previous layers, thus increasing the residual block’s efficiency. The qualitative and quantitative results shows Deep learning with DCR block integrated improves the reconstruction performance significantly. The model also de-noises the existing noise in the image. So the reconstructed image also de-noises the MR image if noise exist. .</p>
+			</details>
+			<br>
+			<details>
+				<summary >FOOD CALORIE DETECTION AND ESTIMATION</summary>
+					<p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp The ease with which food is being delivered at our doorsteps has led to an outbreak of a major chronic disease known as obesity. As the necessity of the food arose among people, the apprehension related to  their diet also simultaneously increased. In this paper we propose a calorie measurement system
+whereby the user is made to upload the image of food item and as a result, number of calories present in
+the uploaded food image will be predicted. It is a multi-task system which also displays the weekly
+statistics on how much calorie is consumed by the user and more or lesser calories must be consumed to
+avoid obesity related diseases such as heart attack, cancer etc. We built a dataset of food images
+collected from existing datasets to detect complex images consisting of 20 classes and each class
+containing 500 images each. We have curated our own Convolutional Neural Network architecture of 6
+layers to extract the features and classify the images. Our experimental results on food recognition
+showed 78.7% testing accuracy with 93.29% training accuracy.
+Software designed to accurately estimate food calories from still images could help users and health
+professionals more efficiently identify dietary patterns and food choices associated with health and
+health risks. However, calorie estimation from images is difficult, and no publicly available software
+can do so accurately while minimizing the burden associated with data collection and analysis.</p>
+			</details>
+			<br>
+           <!-- <a href="#">Project 3</a>
+            <a href="#">Project 4</a>
+            <a href="#">Project 5</a> -->
+            <h2>Contact</h2>
+            <p>madheshraj.new1@gmail.com</p>
+			<p>+91-9042981708</p>
+        </div>
+    </div>
+</body>
+</html>
